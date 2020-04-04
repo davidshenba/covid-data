@@ -50,7 +50,7 @@ public class CovidDataImporterConfig {
     public Step csvProcessingStep() {
         return stepBuilderFactory
                 .get("csvProcessingStep")
-                .<CovidDailyData, CovidDailyData>chunk(10)
+                .<CovidDailyData, CovidDailyData>chunk(100)
                 .reader(multiResourceItemReader())
                 .writer(covidDataWriter)
                 .build();
