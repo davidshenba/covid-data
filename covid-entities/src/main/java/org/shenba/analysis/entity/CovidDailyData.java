@@ -21,6 +21,12 @@ public class CovidDailyData implements Serializable {
     @Column(name = "REC_ID")
     private UUID recordId;
 
+    @Column(name = "POSTAL_CODE")
+    private String postalCode;
+
+    @Column(name = "DISTRICT")
+    private String district;
+
     @Column(name = "STATE")
     private String state;
 

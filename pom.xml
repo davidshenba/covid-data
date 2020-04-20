@@ -20,6 +20,7 @@
     <modules>
 	<module>covid-data-importer</module>
 	<module>covid-analysis</module>
+        <module>covid-entities</module>
     </modules>
 
     <properties>
